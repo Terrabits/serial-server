@@ -52,7 +52,7 @@ def main():
 
     try:
         if not args.tcp_port:
-            print(f'tcp-port {server.tcp_port}', flush=True)
+            print('tcp-port {0}'.format(args.tcp_port), flush=True)
         asyncore.loop()
     except KeyboardInterrupt:
         pass
